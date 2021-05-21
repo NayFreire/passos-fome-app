@@ -1,33 +1,36 @@
 import React from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, Image, TextInput } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet, Image, TextInput, ScrollView } from 'react-native';
 
 import Name from '../../image/nameOrange.png'
 
-const SignScreen = ({navigation}) => {
+const SignUpScreen = ({navigation}) => {
     return(
         <View>
+            <ScrollView>
             <View style={styleSign.viewName}>
                 <Image source={Name} />
             </View>
             <View>
-                <Text style={styleSign.txtTitle}>Faça Login agora mesmo</Text>
+                <Text style={styleSign.txtTitle}>Cadastre-se e aproveite</Text>
                 <View style={styleSign.viewForm}>
-                    <Text style={styleSign.txtForm}>Endereço de e-mail</Text>
+                    <Text style={styleSign.txtForm}>Nome Completo</Text>
+                    <TextInput style={styleSign.input}/>
+                    <Text style={styleSign.txtForm}>Telefone</Text>
+                    <TextInput style={styleSign.input}/>
+                    <Text style={styleSign.txtForm}>Endereço</Text>
+                    <TextInput style={styleSign.input}/>
+                    <Text style={styleSign.txtForm}>E-mail</Text>
                     <TextInput style={styleSign.input}/>
                     <Text style={styleSign.txtForm}>Senha</Text>
-                    <TextInput secureTextEntry={true} style={styleSign.input}/>
-                    <Text style={styleSign.txtForm, {color: '#FA4A0C', fontWeight: 'bold', marginTop: 30}}>Esqueceu sua senha?</Text>        
+                    <TextInput secureTextEntry={true} style={styleSign.input}/>                                     
                 </View>
                 <View style={styleSign.viewBtn}>
                     <TouchableOpacity style={styleSign.btnEnter} onPress={() => navigation.push('HomeScreen')}>
-                        <Text style={styleSign.txtBtn}>Entrar</Text>
+                        <Text style={styleSign.txtBtn}>Cadastrar</Text>
                     </TouchableOpacity> 
-                    <TouchableOpacity onPress={() => navigation.push('HomeScreen')}>
-                        <Text style={styleSign.txtBtn, styleSign.btnSingUp}>Ainda não é cadastrado? Vem com a gente!</Text>
-                </TouchableOpacity> 
+                </View>            
             </View>
-            
-            </View>
+            </ScrollView>
         </View>   
     )
 }
@@ -90,8 +93,8 @@ const styleSign = StyleSheet.create({
         borderRadius: 30,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 40,
-        // marginBottom: -90,
+        marginTop: 10,
+        marginBottom: 20,
         // position: 'relative'
     },
     btnSingUp:{
@@ -107,4 +110,4 @@ const styleSign = StyleSheet.create({
     }
 })
 
-export default SignScreen
+export default SignUpScreen

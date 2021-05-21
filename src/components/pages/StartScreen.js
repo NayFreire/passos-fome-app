@@ -22,7 +22,7 @@ const StartScreen = ({navigation}) => {
             </View>
             <Image source={People} style={styleStart.people}/>
             <View style={{alignItems: 'center'}}>
-                <TouchableOpacity style={styleStart.btn} onPress={() => navigation.push('SignScreen')}>
+                <TouchableOpacity style={styleStart.btn} onPress={() => navigation.push('SignInScreen')}>
                     <Text style={{textAlign: 'center', color: '#FA4A0C', fontSize: 17}}>Comece Agora</Text>
                 </TouchableOpacity>
             </View>
