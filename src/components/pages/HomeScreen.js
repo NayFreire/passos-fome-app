@@ -13,11 +13,7 @@ const HomeScreen = ({navigation, route}) => {
                 <View style={styleHome.viewSearch}>
                     <Image source={Icon} style={styleHome.imgSearch}/>
                     <TextInput style={styleHome.inputSearch} placeholder='Procurar' />
-                </View>
-                {/* <TouchableOpacity onPress={() => navigation.push('SignScreen')}>
-                    <Text>Next</Text>
-                </TouchableOpacity>  */}
-                
+                </View>                
             </View>  
             <Text style={styleHome.txtSubTitle}>Comidas</Text>
             <View style={styleHome.viewFood}>
@@ -41,21 +37,17 @@ const styleHome = StyleSheet.create({
     viewMain:{
         paddingHorizontal: 30,
         paddingVertical: 20,
-        // backgroundColor: '#BCBABA'
     },
     viewFood:{
-        // backgroundColor: '#00ff00',
         width: '100%',
         display: 'flex',
         paddingHorizontal: 30,
         paddingVertical: 10,
-        // backgroundColor: '#BCBABA',
         flexWrap: 'wrap',
         flexDirection: 'row',
         justifyContent: 'center'
     },
     txtTitle:{
-        // backgroundColor: 'yellow',
         width: '60%',
         fontSize: 34,
         fontWeight: 'bold',

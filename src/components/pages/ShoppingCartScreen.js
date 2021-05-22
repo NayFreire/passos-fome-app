@@ -30,7 +30,6 @@ const styleSCScreen = StyleSheet.create({
         paddingHorizontal: 30,
         paddingVertical: 20,
         height: '100%',
-        // backgroundColor: 'yellow'
     },
     foodInfoView:{
         backgroundColor: '#FFF',

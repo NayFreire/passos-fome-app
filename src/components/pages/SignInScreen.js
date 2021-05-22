@@ -36,7 +36,6 @@ const styleSign = StyleSheet.create({
     mainView:{
         backgroundColor: '#F2F2F2',
         height: '100%',
-        // paddingHorizontal: 10,
         paddingVertical: 10
     },
     viewName:{
@@ -66,7 +65,6 @@ const styleSign = StyleSheet.create({
     input:{
         height: 50,
         borderWidth: 1,
-        // borderColor: '#000',
         fontSize: 17,
         padding: 0,
         borderRightColor: 'transparent',
@@ -75,12 +73,9 @@ const styleSign = StyleSheet.create({
         borderBottomColor: '#a1a1a1'
     },
     viewBtn:{
-        // paddingVertical: 30,
         display: 'flex',
-        // backgroundColor: '#000',
         height: '100%',
         alignItems: 'center',
-        // justifyContent: 'center'
     },
     btnEnter:{
         backgroundColor: '#FA4A0C',
@@ -91,8 +86,6 @@ const styleSign = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 30,
-        // marginBottom: -90,
-        // position: 'relative'
     },
     btnSingUp:{
         display: 'flex',

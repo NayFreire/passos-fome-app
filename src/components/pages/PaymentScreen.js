@@ -42,7 +42,7 @@ const PaymentScreen = ({route}) => {
                 <Text style={{fontSize: 22}}>R$13,50</Text>
             </View>
             <View style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end', height: '15%'}}>
-                <TouchableOpacity style={stylePaymentScreen.btnEnter} onPress={() => navigation.push('ProfileScreen')}>
+                <TouchableOpacity style={stylePaymentScreen.btnEnter} onPress={() => navigation.push('ProfileScreen', {navigation: navigation})}>
                     <Text style={stylePaymentScreen.txtBtn}>Finalizar Pedido</Text>
                 </TouchableOpacity>
             </View>
@@ -57,7 +57,6 @@ const stylePaymentScreen = StyleSheet.create({
         flexWrap: 'wrap',
         flexDirection: 'row',
         alignItems: 'center',
-        // backgroundColor: 'yellow',
         paddingHorizontal: 30,
         paddingVertical: 20,
         

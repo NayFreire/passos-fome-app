@@ -7,13 +7,6 @@ import People from '../../image/people.png'
 
 const StartScreen = ({navigation}) => {
     return(
-        // <View>
-        //     {/* <Text>Start</Text>
-        //     <TouchableOpacity onPress={() => navigation.push('SignScreen')}>
-        //         <Text>Next</Text>
-        //     </TouchableOpacity> */}
-            
-        // </View>
         <View style={styleStart.mainView}>
             
             <View style={styleStart.logoView}>
@@ -42,16 +35,16 @@ const styleStart = StyleSheet.create({
         // backgroundColor: '#e1e1e1'
     },
     logo: {
-        margin: 40
+        marginLeft: 40,
+        marginBottom: 20
     },
     people: {
         marginLeft: -8,
         marginTop: 20,
-        flex: 0.9
+        flex: 1
     },
     btn:{
         width: '80%',
-        marginBottom: -20,
         backgroundColor: '#fff',
         paddingVertical: 25,
         borderRadius: 30

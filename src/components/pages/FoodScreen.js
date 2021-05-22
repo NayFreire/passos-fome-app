@@ -56,7 +56,6 @@ const styleFoodScreen = StyleSheet.create({
     },
     infoView: {
         marginTop: 20,
-        // backgroundColor: 'yellow',
         width: '100%',
         height: '100%',
         paddingHorizontal: 20
